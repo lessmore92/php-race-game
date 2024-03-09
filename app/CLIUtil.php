@@ -18,7 +18,7 @@ class CLIUtil
      * @param bool $hide
      * @return string
      */
-    public static function prompt($msg, $acceptable_max, $acceptable_min = 0, $default = false, $marker = ': ', $hide = false)
+    public static function promptNumber($msg, $acceptable_max, $acceptable_min = 0, $default = false, $marker = ': ', $hide = false)
     {
         do
         {

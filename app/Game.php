@@ -22,9 +22,9 @@ class Game
             CLIUtil::line(($index + 1) . ". " . $vehicle->getName() . " - " . $vehicle->getSpeed() . " km/h");
         }
 
-        $distance = CLIUtil::prompt('%YWhat is the distance of the race track?%n', 1000, 100, 200);
-        $player1  = CLIUtil::prompt('%CPlayer 1, enter the number of your vehicle%n', count($vehicles), 1);
-        $player2  = CLIUtil::prompt('%BPlayer 2, enter the number of your vehicle%n', count($vehicles), 1);
+        $distance = CLIUtil::promptNumber('%YWhat is the distance of the race track?%n', 1000, 100, 200);
+        $player1  = CLIUtil::promptNumber('%CPlayer 1, enter the number of your vehicle%n', count($vehicles), 1);
+        $player2  = CLIUtil::promptNumber('%BPlayer 2, enter the number of your vehicle%n', count($vehicles), 1);
 
         //Get the selected vehicles
         $selectedVehicles   = [];
