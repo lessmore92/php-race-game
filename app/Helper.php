@@ -9,14 +9,18 @@ namespace App;
 
 class Helper
 {
-    public static function loadVehicles($file_name = 'vehicles.json')
+    /**
+     * @param $file_name
+     * @return Vehicle[]
+     */
+    public static function loadVehicles($file_name = 'vehicles.json'): array
     {
         $vehicles = json_decode(file_get_contents($file_name), true);
 
         $vehicleObjects = [];
         foreach ($vehicles as $vehicle)
         {
-            $vehicleObjects[] = new Vehicle($vehicle['name'], $vehicle['maxSpeed']);
+            $vehicleObjects[] = new Vehicle($vehicle['name'], $vehicle['maxSpeed'], $vehicle['unit']);
         }
 
         return $vehicleObjects;

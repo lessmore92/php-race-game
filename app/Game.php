@@ -19,7 +19,7 @@ class Game
         //Display the list of available vehicles
         foreach ($vehicles as $index => $vehicle)
         {
-            CLIUtil::line(($index + 1) . ". " . $vehicle->getName() . " - " . $vehicle->getSpeed() . " km/h");
+            CLIUtil::line(($index + 1) . ". " . $vehicle->getName() . " - " . $vehicle->getSpeedInKmH() . " km/h");
         }
 
         $distance = CLIUtil::promptNumber('%YWhat is the distance of the race track?%n', 1000, 100, 200);

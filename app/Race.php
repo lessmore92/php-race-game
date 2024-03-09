@@ -28,7 +28,7 @@ class Race
         foreach ($this->vehicles as $index => $vehicle)
         {
             //Calculate the time taken by the vehicle to complete the race
-            $time = $this->distance / $vehicle->getSpeed();
+            $time = $this->distance / $vehicle->getSpeedInKmH();
 
             $this->results[] = [
                 'player'  => $index + 1,
