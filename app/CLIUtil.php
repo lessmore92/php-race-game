@@ -31,4 +31,13 @@ class CLIUtil
         } while (!$in_acceptable_range);
         return $player1;
     }
+
+    /**
+     * @param string $text
+     * @return void
+     */
+    public static function line($text)
+    {
+        \cli\line($text);
+    }
 }
