@@ -1,5 +1,10 @@
 # CLI-Based Two-Player Vehicle Racing Game in PHP
 
+## Installation
+```shell
+composer install
+```
+
 ## How To Start
 
 Start the game:
